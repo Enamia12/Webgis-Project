@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lokasi Penelitian</title>
+    <!-- Link ke CSS Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .hero-section {
+            background-color: #007bff;
+            color: white;
+            padding: 60px 0;
+        }
+        .hero-section h1 {
+            font-size: 36px;
+        }
+        .hero-section p {
+            font-size: 18px;
+        }
+        .card-img-top {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .card-text {
+            font-size: 14px;
+            color: #555;
+        }
+        #webgis {
+            background-color: #f1f1f1;
+            padding: 40px 20px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Penelitian</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section text-center">
+        <h1>Selamat Datang DI DATA RIZKY</h1>
+        <p>Menampilkan Peta Lokasi Penelitian yang Interaktif</p>
+        <a href="#webgis" class="btn btn-light btn-lg">Lihat Peta Lokasi</a>
+    </div>
+
+    <!-- Content Section (Grid) -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="E:\BAPENDA\RIZKY\Data\WEBGIS\WEB GIS\GIS\Foto Web\Stasiun 1.jpg" class="card-img-top" alt="Stasiun 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Stasiun 1</h5>
+                        <p class="card-text">Kondisi: Spot Pemancing</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="E:\BAPENDA\RIZKY\Data\WEBGIS\WEB GIS\GIS\Foto Web\Stasiun 2.jpg" class="card-img-top" alt="Stasiun 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Stasiun 2</h5>
+                        <p class="card-text">Kondisi: Terdapat Sampah</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img src="E:\BAPENDA\RIZKY\Data\WEBGIS\WEB GIS\GIS\Foto Web\Stasiun 3.jpg" class="card-img-top" alt="Stasiun 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Stasiun 3</h5>
+                        <p class="card-text">Kondisi: Aktivitas Rumah Tangga Seperti Mencuci Baju</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- WebGIS Section -->
+    <div class="container mt-5" id="webgis">
+        <h2 class="text-center">Peta Lokasi Penelitian</h2>
+        <p class="text-center">Berikut adalah peta interaktif lokasi penelitian yang dapat diakses.</p>
+
+        <!-- Menyematkan WebGIS menggunakan iframe -->
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="E:\BAPENDA\RIZKY\Data\WEBGIS\WEB GIS\GIS\index.html"class="embed-responsive-item" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Data Rizky. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <!-- Link ke JS Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
